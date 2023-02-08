@@ -1,0 +1,97 @@
+/* Reiniciar los valores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos de fondo */
+body {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-image: url(/Img/schedule-bg.jpg);
+}
+
+/* Estilos para el header */
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+
+header img {
+  height: 60px;
+}
+
+/* Estilos para el contenido principal */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section {
+  width: 80%;
+  margin: 20px 10px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+section iframe {
+  width: 100%;
+  height: 250px;
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+footer ul {
+  display: flex;
+}
+
+footer li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Media Queries para adaptarse a diferentes tamaños de pantalla */
+@media only screen and (max-width: 767px) {
+  section {
+    width: 100%;
+    height: auto;
+  }
+  
+  section iframe {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  section {
+    width: 60%;
+    height: auto;
+  }
+  
+  section iframe {
+    width: 100%;
+    height: 350px;
+  }
+}
